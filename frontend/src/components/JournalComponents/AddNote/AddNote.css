@@ -1,0 +1,48 @@
+.new-note-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.journal-page-header {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 43px;
+    position: absolute;
+    color: var(--mocha-color);
+    /* opacity: 0.8; */
+    text-align: left;
+    left: 15px;
+    top: 130px;
+}
+
+.new-note {
+    background-color: var(--cream-color);
+    min-width: 650px;
+    height: 40%;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
+    color: var(--mocha-color);
+    box-shadow: var(--soft-shadow);
+
+    position: absolute;
+    bottom: -15px;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    background-color: var(--cream-color);
+}
+
+textarea:focus {
+    outline: none;
+}

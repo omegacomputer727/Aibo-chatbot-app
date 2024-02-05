@@ -1,0 +1,84 @@
+.circle-container {
+    margin-top: 20px;
+    /* border: 2px solid black; */
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #C7A6E8;
+    border: 2px var(--mocha-color) solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: var(--soft-shadow);
+}
+
+.icon {
+    font-size: 26px;
+    color: var(--mocha-color);
+}
+
+.circle:hover, .active {
+    background-color: var(--cream-color);
+}
+
+.circle1 {
+    position: relative;
+    right: 200px;
+}
+
+.circle2 {
+    position: relative;
+    bottom: 20px;
+    right: 75px;
+}
+
+.tooltip-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-nav .tooltiptext-nav {
+    visibility: hidden;
+    width: 100px;
+    font-size: 16px;
+    background-color: var(--mocha-color);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.tooltip-nav:hover .tooltiptext-nav {
+    visibility: visible;
+}
+
+.tooltip-nav .tooltiptext-nav::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--mocha-color) transparent;
+}

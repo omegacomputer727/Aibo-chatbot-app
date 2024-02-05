@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  user-select: none;
+  -webkit-user-select: none;/* For Safari */
+  -moz-user-select: none;/* For Firefox */
+  -ms-user-select: none;
+}

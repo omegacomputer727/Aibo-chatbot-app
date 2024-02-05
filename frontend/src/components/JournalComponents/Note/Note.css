@@ -1,0 +1,33 @@
+.note {
+    background-color: var(--cream-color);
+    border-radius: 7px;
+    padding: 1rem;
+    margin: 5px 10px 0 10px ;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
+    color: var(--mocha-color);
+    box-shadow: var(--soft-shadow);
+}
+
+.note-content {
+    font-size: 16px;
+}
+
+.note-footer {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+.gap {
+    height: 10px;
+    background-color: transparent;
+}

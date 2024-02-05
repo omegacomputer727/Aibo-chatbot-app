@@ -1,0 +1,82 @@
+.all {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.user-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    width: 2px;
+    background-color: var(--mocha-color);
+}
+
+.app-name {
+    color: var(--mocha-color);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 20px 10px 20px 20px;
+    position: relative;
+}
+
+.user-circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--cream-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 2px black solid;
+    cursor: pointer;
+}
+
+.initial {
+    color: var(--mocha-color);
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 10px;
+    background-color: white;
+    position: relative;
+    border: 2px black solid;
+}
+
+.progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: var(--green-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.username {
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* text-align: right; */
+    color: var(--mocha-color);
+}

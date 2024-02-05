@@ -1,0 +1,22 @@
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: var(--ge-color);
+    border: 2px var(--mocha-color) solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: var(--soft-shadow);
+}
+
+.circle:hover {
+    background-color: var(--cream-color);
+    
+}
+
+.circle-icon {
+    font-size: 34px;
+}

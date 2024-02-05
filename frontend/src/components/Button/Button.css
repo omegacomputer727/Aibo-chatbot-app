@@ -1,0 +1,21 @@
+.button-container {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
+}
+
+.submit {
+    border: 2px solid var(--cream-color);
+    padding: 15px 25px;
+    background-color: var(--mocha-color);
+    color: var(--cream-color);
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit:hover {
+    box-shadow: var(--soft-shadow);
+}

@@ -1,0 +1,35 @@
+.container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.search-box {
+    position: absolute;
+    left: 70px;
+    top: 110px;
+    width: 25%;
+}
+
+.left-column-jor {
+    position: absolute;
+    left: 70px;
+    bottom: 40px;
+    width: 25%;
+    box-shadow: var(--soft-shadow);
+}
+
+.right-column-jor {
+    width: 74%;
+    height: 64.5vh;
+    display: flex;
+    margin-left: 17%;
+    margin-top: 7%;
+    text-align: center;
+    padding: 20px;
+    /* border: 2px solid var(--mocha-color); */
+    border-radius: 8px;
+    /* box-shadow: var(--soft-shadow); */
+}

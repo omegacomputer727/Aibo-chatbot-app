@@ -1,0 +1,33 @@
+.search-container {
+    width: 370px;
+}
+
+.search {
+    display: flex;
+    color: var(--mocha-color);
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 1.5em;
+    position: relative;
+    left: 0;
+}
+
+.search-icon {
+    margin-right: 10px;
+}
+
+.search-bar {
+    border: none;
+    background-color: rgb(237, 235, 235);
+    padding: 5px;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid var(--mocha-color);
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-bar:focus {
+    outline: none;
+}

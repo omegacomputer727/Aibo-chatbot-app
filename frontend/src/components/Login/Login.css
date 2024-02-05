@@ -1,0 +1,101 @@
+.parent-div {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-container {
+    text-align: center;
+    padding: 40px;
+    border: 2px solid var(--mocha-color);
+    border-radius: 7px;
+    height: 200px;
+    padding-top: 100px;
+    box-shadow: var(--soft-shadow);
+    background-color: var(--cream-color);
+}
+
+.aibo-logo {
+    width: 7%;
+    height: auto;
+    position: absolute;
+    top: 200px;
+}
+
+h1 {
+    color: var(--mocha-color);
+    letter-spacing: 3px;
+}
+
+.sign-in-button {
+    background-color: var(--ge-color);
+    color: var(--mocha-color);
+    padding: 15px 50px;
+    font-weight: bold;
+    border: 2px solid var(--mocha-color);
+    border-radius: 7px;
+    font-size: 20px;
+    box-shadow: var(--soft-shadow);
+    overflow: hidden;
+}
+
+.sign-in-button:hover {
+    background-color: var(--cream-color);
+    cursor: pointer;
+}
+
+.sign-in-button div {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.main {
+    display: block;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.aibomark {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--mocha-color);
+}
+
+.aibomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.main input:checked~.aibomark:after {
+    display: block;
+}
+
+.main .aibomark:after {
+    left: 8px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
