@@ -24,7 +24,6 @@ CORS(app)
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
-# openai_api_key = "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"
 
 raw_documents = TextLoader('knowledge_base.txt').load()
 text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=0, separator=".")
@@ -35,17 +34,6 @@ db = vectordb.from_documents(documents, OpenAIEmbeddings())
 history = []
 history_size = 51 #keep this odd
 
-# try:
-#   with open("chat_history.json", "r") as json_file:
-#     history = json.load(json_file)    
-# except:
-#   pass
-
-# try:
-#   with open("chat_history.json", "w") as file:
-#    json.dump({}, file)
-# except:
-#   pass
 
 
 def retrieve_info(query):
